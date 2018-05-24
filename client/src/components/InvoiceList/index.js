@@ -203,9 +203,9 @@ class InvoiceList extends Component {
             onClick={this.handleCreateNew}
           >
             <CardBody>
-              <Button className="Invoice-List-add-btn">
+              <div className="Invoice-List-add-btn">
                 <span>&#43;</span>
-              </Button>
+              </div>
               <p className="Invoice-List-add-text">Create a new invoice</p>
             </CardBody>
           </Card>

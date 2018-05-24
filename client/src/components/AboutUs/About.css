@@ -1,0 +1,43 @@
+.About .jumbotron {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.About .jumbotron:nth-child(odd) {
+  background-color: #fff;
+}
+
+.About .jumbotron:nth-child(even) {
+  background-color: #bccaca;
+}
+
+.About-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.About-pic {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  width: 200px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.About-info {
+  display: inline-block;
+  max-width: 700px;
+}
+
+.About-info .display-4 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 500px) {
+  .About .display-4 {
+    font-size: 2.5rem;
+  }
+}

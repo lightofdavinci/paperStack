@@ -8,6 +8,7 @@ import RequireAuth from "./components/RequireAuthHOC";
 import InvoiceList from "./components/InvoiceList";
 import Billing from "./components/Billing";
 import Settings from "./components/Settings";
+import About from "./components/AboutUs";
 import NotFound from "./components/NotFound";
 import InvoiceScreen from "./components/invoiceScreen";
 
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/new" component={RequireAuth(InvoiceScreen)} />
           <Route path="/billing" component={Billing} />
           <Route path="/settings" component={RequireAuth(Settings)} />
+          <Route path="/about" component={RequireAuth(About)} />
           <Route component={NotFound} />
         </Switch>
       </Router>

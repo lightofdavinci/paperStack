@@ -59,6 +59,11 @@ class Navigation extends Component {
                 Settings
               </NavLink>
             </NavItem>
+            <NavItem active={window.location.pathname === "/about"}>
+              <NavLink onClick={() => this.props.history.push("/about")}>
+                About
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink onClick={this.handleSignOut}>Sign Out</NavLink>
             </NavItem>

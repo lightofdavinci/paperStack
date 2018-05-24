@@ -451,7 +451,7 @@ class InvoiceScreen extends Component {
       pdf
         .setFontSize(30)
         .setTextColor(60)
-        .text(435, 40, "INVOICE");
+        .text(438, 40, "INVOICE");
       pdf
         .setFontSize(15)
         .setTextColor(120)

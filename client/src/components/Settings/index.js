@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Navigation from "../Navigation";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, InputGroup, Input, InputGroupAddon } from "reactstrap";
 
 import placeholderImg from "./placeholder.png";
 import "./Settings.css";
@@ -322,12 +322,16 @@ class Settings extends Component {
             >
               <label>Company Name: {this.state.newCompanyName}</label>
               <br />
-              <input
-                type="text"
-                value={this.state.companyName}
-                onChange={this.handleChangeCompanyName}
-              />
-              <Button color="secondary">Save</Button>
+              <InputGroup>
+                <Input 
+                  type="text"
+                  value={this.state.companyName}
+                  onChange={this.handleChangeCompanyName} 
+                />
+                <InputGroupAddon addonType="append">
+                  <Button color="secondary">Save</Button>
+                </InputGroupAddon>
+              </InputGroup>
             </form>
             <br />
             <form
@@ -337,12 +341,16 @@ class Settings extends Component {
             >
               <label>Company Address: {this.state.newCompanyAddress}</label>
               <br />
-              <input
-                type="text"
-                value={this.state.companyAddress}
-                onChange={this.handleChangeCompanyAddress}
-              />
-              <Button color="secondary">Save</Button>
+              <InputGroup>
+                <Input 
+                  type="text"
+                  value={this.state.companyAddress}
+                  onChange={this.handleChangeCompanyAddress} 
+                />
+                <InputGroupAddon addonType="append">
+                  <Button color="secondary">Save</Button>
+                </InputGroupAddon>
+              </InputGroup>
             </form>
             <br />
             <div className="UserSetting-invoice-section">
@@ -355,12 +363,16 @@ class Settings extends Component {
                   Current Invoice Number: {this.state.newInvoiceNumber}
                 </label>
                 <br />
-                <input
-                  type="text"
-                  value={this.state.invoiceNumber}
-                  onChange={this.handleChangeInvoiceNumber}
-                />
-                <Button color="secondary">Save</Button>
+                <InputGroup>
+                  <Input 
+                    type="text"
+                    value={this.state.invoiceNumber}
+                    onChange={this.handleChangeInvoiceNumber} 
+                  />
+                  <InputGroupAddon addonType="append">
+                    <Button color="secondary">Save</Button>
+                  </InputGroupAddon>
+                </InputGroup>
               </form>
             </div>
           </div>
